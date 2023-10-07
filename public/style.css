@@ -1,0 +1,59 @@
+body{
+    background-color: purple;
+   
+}
+
+.box{
+    background-color: white;
+    height: 40vh;
+    width: 95vw;
+    border: 2px solid black;
+    box-shadow: 10px 10px 5px #888888;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.listitems{
+    background-color: white;
+    height: 45vh;
+    width: 95vw;
+    border: 2px solid black;
+    box-shadow: 10px 10px 5px #888888;
+    overflow-x: hidden;
+}
+
+#list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    overflow-y: scroll;
+}
+
+#list li button {
+    margin-left: 1rem;
+}
+
+
+@media screen and (max-width: 480px) {
+    #list li{
+        display: flex;
+        flex-direction: column;
+        overflow-y: scroll;
+    }
+  }
+  @media screen and (max-width: 285px) {
+    .buttons{
+        display: flex;
+        flex-direction: column;
+       
+    }
+    .btn{
+        margin-top: 10px;
+    }
+  }
